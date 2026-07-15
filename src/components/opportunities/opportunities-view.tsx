@@ -147,8 +147,8 @@ export function OpportunitiesView({
         }
       />
 
-      <section className="surface-panel overflow-hidden rounded-lg">
-        <div className="flex flex-col gap-3 border-b bg-[#dce3e4] p-3.5 lg:flex-row lg:items-center">
+      <section className="overflow-hidden border-y border-[#afbeb6] bg-[#e1e7e7]/55">
+        <div className="flex flex-col gap-3 border-b border-[#afbeb6] bg-[#d7dfe0]/65 px-1 py-3.5 lg:flex-row lg:items-center lg:px-3.5">
           <div className="relative min-w-0 flex-1 lg:max-w-sm">
             <Search className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2" />
             <Input
@@ -218,7 +218,7 @@ export function OpportunitiesView({
             <div className="hidden overflow-x-auto md:block">
               <Table>
                 <TableHeader>
-                  <TableRow className="bg-[#d7e0e2] hover:bg-[#d7e0e2]">
+                  <TableRow className="bg-[#d2dcde]/70 hover:bg-[#d2dcde]/70">
                     <TableHead>Oportunidad</TableHead>
                     <TableHead>Etapa</TableHead>
                     <TableHead>Prioridad</TableHead>
@@ -333,7 +333,7 @@ export function OpportunitiesView({
                     key={opportunity.id}
                     type="button"
                     onClick={() => setSelectedId(opportunity.id)}
-                    className="w-full px-4 py-3.5 text-left transition-colors hover:bg-[#f8faf9]"
+                    className="w-full px-4 py-3.5 text-left transition-colors hover:bg-white/25"
                   >
                     <div className="flex items-start gap-3">
                       {client && (

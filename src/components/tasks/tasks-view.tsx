@@ -139,7 +139,7 @@ export function TasksView() {
         }
       />
 
-      <section className="surface-panel mb-6 grid grid-cols-2 overflow-hidden rounded-lg sm:grid-cols-4">
+      <section className="mb-6 grid grid-cols-2 overflow-hidden border-y border-[#afbeb6] sm:grid-cols-4">
         <button
           type="button"
           onClick={() => {
@@ -222,8 +222,8 @@ export function TasksView() {
         </button>
       </section>
 
-      <section className="surface-panel overflow-hidden rounded-lg">
-        <div className="flex flex-col gap-3 border-b bg-[#dce6e0] p-3.5 lg:flex-row lg:items-center">
+      <section className="overflow-hidden border-y border-[#afbeb6] bg-[#e2e9e5]/55">
+        <div className="flex flex-col gap-3 border-b border-[#afbeb6] bg-[#d7e2dc]/65 px-1 py-3.5 lg:flex-row lg:items-center lg:px-3.5">
           <div className="bg-muted/45 inline-flex w-fit rounded-lg border p-1">
             <button
               type="button"
@@ -321,7 +321,7 @@ export function TasksView() {
               return (
                 <div
                   key={task.id}
-                  className="flex min-h-[76px] items-center gap-3 px-4 py-3 transition-colors hover:bg-[#f9faf9] sm:px-5"
+                  className="flex min-h-[76px] items-center gap-3 px-4 py-3 transition-colors hover:bg-white/25 sm:px-5"
                 >
                   <Checkbox
                     checked={task.completed}

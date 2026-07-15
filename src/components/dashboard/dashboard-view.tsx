@@ -262,7 +262,7 @@ export function DashboardView() {
       </section>
 
       {attentionCount > 0 && (
-        <section className="surface-panel surface-warm mb-6 flex flex-col gap-3 overflow-hidden rounded-lg border-l-[3px] border-l-[#c99a3b] px-4 py-3.5 sm:flex-row sm:items-center sm:justify-between">
+        <section className="mb-6 flex flex-col gap-3 border-y border-[#b8aa8d] bg-[#e8e3d9]/70 px-1 py-3.5 sm:flex-row sm:items-center sm:justify-between sm:px-4">
           <div className="flex items-start gap-3">
             <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-lg bg-[#f7edda] text-[#8a6315]">
               <AlertCircle className="size-4" strokeWidth={2} />
@@ -289,8 +289,8 @@ export function DashboardView() {
         </section>
       )}
 
-      <div className="grid gap-5 xl:grid-cols-12">
-        <section className="surface-panel surface-sage overflow-hidden rounded-lg xl:col-span-8">
+      <div className="grid gap-0 border-y border-[#afbeb6] bg-[#dce6e0]/55 xl:grid-cols-12">
+        <section className="overflow-hidden border-b border-[#afbeb6] xl:col-span-8 xl:border-r">
           <div className="flex items-center justify-between border-b px-5 py-[18px]">
             <div>
               <h2 className="text-[15px] font-semibold">Ingresos cerrados</h2>
@@ -364,7 +364,7 @@ export function DashboardView() {
           </div>
         </section>
 
-        <section className="surface-panel surface-lilac overflow-hidden rounded-lg xl:col-span-4">
+        <section className="overflow-hidden border-b border-[#afbeb6] bg-[#dfdfe3]/45 xl:col-span-4">
           <div className="flex items-center justify-between border-b px-5 py-[18px]">
             <div>
               <h2 className="text-[15px] font-semibold">Estado del pipeline</h2>
@@ -415,7 +415,7 @@ export function DashboardView() {
           </div>
         </section>
 
-        <section className="surface-panel surface-warm overflow-hidden rounded-lg xl:col-span-7">
+        <section className="overflow-hidden border-b border-[#afbeb6] bg-[#e5e0d6]/35 xl:col-span-7 xl:border-r xl:border-b-0">
           <div className="flex items-center justify-between border-b px-5 py-[18px]">
             <div>
               <h2 className="text-[15px] font-semibold">Tareas prioritarias</h2>
@@ -437,7 +437,7 @@ export function DashboardView() {
               return (
                 <div
                   key={task.id}
-                  className="flex min-h-[62px] items-center gap-3 px-5 py-3 transition-colors hover:bg-[#f9faf9]"
+                  className="flex min-h-[62px] items-center gap-3 px-5 py-3 transition-colors hover:bg-white/25"
                 >
                   <Checkbox
                     checked={task.completed}
@@ -474,7 +474,7 @@ export function DashboardView() {
           </div>
         </section>
 
-        <section className="surface-panel surface-mist overflow-hidden rounded-lg xl:col-span-5">
+        <section className="overflow-hidden bg-[#dbe3e3]/35 xl:col-span-5">
           <div className="flex items-center justify-between border-b px-5 py-[18px]">
             <div>
               <h2 className="text-[15px] font-semibold">Seguimientos</h2>
@@ -498,7 +498,7 @@ export function DashboardView() {
                   <Link
                     key={opportunity.id}
                     href={`/opportunities?selected=${opportunity.id}`}
-                    className="flex min-h-[68px] items-center gap-3 px-5 py-3 transition-colors hover:bg-[#f9faf9]"
+                    className="flex min-h-[68px] items-center gap-3 px-5 py-3 transition-colors hover:bg-white/25"
                   >
                     <EntityAvatar
                       name={client.name}

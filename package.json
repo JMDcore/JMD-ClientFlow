@@ -2,6 +2,28 @@
   "name": "jmd-clientflow",
   "version": "0.1.0",
   "private": true,
+  "description": "CRM ligero para gestionar clientes, oportunidades, pipeline y seguimiento.",
+  "author": "José Miguel Díaz <jmdcore.dev@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/JMDcore/JMD-ClientFlow#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMDcore/JMD-ClientFlow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JMDcore/JMD-ClientFlow/issues"
+  },
+  "keywords": [
+    "crm",
+    "freelance",
+    "nextjs",
+    "typescript",
+    "kanban",
+    "portfolio"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,6 +34,9 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:e2e": "playwright test",
+    "screenshots": "node scripts/capture-screenshots.mjs",
+    "showcase": "node scripts/generate-showcase.mjs",
+    "validate": "npm run format:check && npm run lint && npm run typecheck && npm run test",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

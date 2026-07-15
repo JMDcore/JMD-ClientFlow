@@ -146,8 +146,8 @@ export function ClientsView({
         }
       />
 
-      <section className="surface-panel overflow-hidden rounded-lg">
-        <div className="flex flex-col gap-3 border-b bg-[#dce6e0] p-3.5 sm:flex-row sm:items-center">
+      <section className="overflow-hidden border-y border-[#afbeb6] bg-[#e2e9e5]/55">
+        <div className="flex flex-col gap-3 border-b border-[#afbeb6] bg-[#d7e2dc]/65 px-1 py-3.5 sm:flex-row sm:items-center sm:px-3.5">
           <div className="relative min-w-0 flex-1 sm:max-w-sm">
             <Search className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2" />
             <Input
@@ -187,7 +187,7 @@ export function ClientsView({
             <div className="hidden overflow-x-auto md:block">
               <Table>
                 <TableHeader>
-                  <TableRow className="bg-[#d8e3dd] hover:bg-[#d8e3dd]">
+                  <TableRow className="bg-[#d3ded8]/70 hover:bg-[#d3ded8]/70">
                     <TableHead>Cliente</TableHead>
                     <TableHead>Contacto</TableHead>
                     <TableHead>Estado</TableHead>
@@ -318,7 +318,7 @@ export function ClientsView({
                     key={client.id}
                     type="button"
                     onClick={() => setSelectedId(client.id)}
-                    className="flex w-full items-center gap-3 px-4 py-3.5 text-left transition-colors hover:bg-[#f8faf9]"
+                    className="flex w-full items-center gap-3 px-4 py-3.5 text-left transition-colors hover:bg-white/25"
                   >
                     <EntityAvatar
                       name={client.name}

@@ -36,22 +36,34 @@ export default function OpenGraphImage() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
-          <div
-            style={{
-              width: "48px",
-              height: "48px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderRadius: "8px",
-              background: "#147a5b",
-              color: "#ffffff",
-              fontSize: "19px",
-              fontWeight: 700,
-            }}
-          >
-            CF
-          </div>
+          <svg width="48" height="48" viewBox="0 0 64 64">
+            <rect width="64" height="64" rx="14" fill="#2d8a68" />
+            <path
+              d="M16 43c0-8 5-13 13-12 9 1 13-4 18-13"
+              fill="none"
+              stroke="#f4f7f5"
+              strokeWidth="5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <circle cx="16" cy="43" r="5" fill="#f4f7f5" />
+            <circle
+              cx="30"
+              cy="31"
+              r="5"
+              fill="#2d8a68"
+              stroke="#f4f7f5"
+              strokeWidth="3.5"
+            />
+            <circle
+              cx="47"
+              cy="18"
+              r="6"
+              fill="#e4b65b"
+              stroke="#236f55"
+              strokeWidth="2"
+            />
+          </svg>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <span style={{ fontSize: "25px", fontWeight: 700 }}>
               ClientFlow

@@ -228,13 +228,13 @@ function PipelineColumn({
 
   return (
     <section
-      className="flex min-h-[540px] min-w-0 flex-col overflow-hidden rounded-lg border border-t-2"
+      className="flex min-h-[540px] min-w-0 flex-col border-l-2"
       style={{
-        borderTopColor: config.color,
+        borderLeftColor: config.color,
         backgroundColor: config.surfaceColor,
       }}
     >
-      <header className="border-b border-black/[0.06] bg-white/35 px-3.5 py-3.5">
+      <header className="border-b border-black/[0.08] bg-white/18 px-3.5 py-3.5">
         <div className="flex items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-2">
             <span className={cn("size-2 rounded-full", config.dotClass)} />
@@ -372,7 +372,7 @@ export function PipelineView() {
         }
       />
 
-      <div className="surface-panel mb-5 flex flex-col gap-3 rounded-lg p-2.5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mb-5 flex flex-col gap-3 border-y border-[#afbeb6] bg-[#d9e3dd]/65 px-1 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:px-2.5">
         <div className="bg-muted/70 inline-flex w-fit rounded-lg border p-1">
           <button
             type="button"

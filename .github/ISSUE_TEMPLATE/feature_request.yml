@@ -1,0 +1,36 @@
+name: Proponer una mejora
+description: Sugiere una nueva capacidad o una mejora de producto.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema que resuelve
+      description: Describe la necesidad del usuario, no solo la solución.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta
+      description: Explica cómo debería funcionar la mejora.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - Dashboard
+        - Clientes
+        - Oportunidades
+        - Pipeline
+        - Tareas
+        - Plataforma
+    validations:
+      required: true
