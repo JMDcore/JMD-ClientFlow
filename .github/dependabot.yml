@@ -9,6 +9,10 @@ updates:
       time: "06:00"
       timezone: Atlantic/Canary
     open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
     groups:
       npm-minor-and-patch:
         patterns:
